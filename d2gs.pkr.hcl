@@ -88,12 +88,14 @@ build {
     script = "scripts/generate_pvpgn_configs.sh"
   }
 
-  post-processor "docker-tag" {
-    repository = "${var.DOCKER_IMAGE_NAME}"
-    tags = ["${var.DOCKER_IMAGE_TAG}"]
-  }
+  post-processors {
+    post-processor "docker-tag" {
+      repository = "${var.DOCKER_IMAGE_NAME}"
+      tags = ["${var.DOCKER_IMAGE_TAG}"]
+    }
 
-  post-processor "docker-save" {
-    path = "generated/nanibot-d2gs.tar"
+    post-processor "docker-save" {
+      path = "generated/nanibot-d2gs.tar"
+    }
   }
 }
