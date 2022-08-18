@@ -1,6 +1,8 @@
 # diablo2-server-docker
 One tap creation of a docker image containing all the necessary components required to run a Diablo 2 private server
 
+## Warning: Currently, for some reason D2GS.exe uses 100 percent CPU. This was not the case for the images that I built manually. Will fix in some time.
+
 Used to host a Diablo II server at [nanibot.net](https://nanibot.net)
 
 The created docker image will have the following applications managed by Supervisor:
