@@ -14,7 +14,7 @@
 "AdminPort"=dword:000022b8
 "AdminTimeout"=dword:00000e10
 "D2CSSecrect"="$D2CS_SECRET"
-"EnableNTMode"=dword:00000000
+"EnableNTMode"=dword:00000001
 "EnablePreCacheMode"=dword:00000001
 "IdleSleep"=dword:00000001
 "BusySleep"=dword:00000001
