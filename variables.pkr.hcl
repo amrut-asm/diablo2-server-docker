@@ -1,0 +1,14 @@
+variable "NETWORK_CIDR" {}
+variable "INTERNAL_IP" {}
+variable "EXTERNAL_IP" {}
+variable "D2GS_MAXGAMES" {}
+variable "TELNET_PASSWORD_HASH" {}
+variable "D2CS_SECRET" {}
+variable "D2CS_MOTD" {}
+variable "D2CS_REALM_NAME" {}
+variable "SV_LOCATION" {}
+variable "SV_DESCRIPTION" {}
+variable "SV_URL" {}
+variable "SV_CONTACT_NAME" {}
+variable "DOCKER_IMAGE_NAME" {}
+variable "DOCKER_IMAGE_TAG" {}

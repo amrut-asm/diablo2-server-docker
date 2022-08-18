@@ -1,0 +1,29 @@
+version: '3.9'
+services:
+  d2gs:
+    image: $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
+    container_name: d2gs
+    restart: unless-stopped
+    ports:
+      - "6112:6112/tcp"
+      - "6112:6112/udp"
+      - "6113:6113/tcp"
+      - "6113:6113/udp"
+      - "6114:6114/tcp"
+      - "6114:6114/udp"
+      - "4000:4000/tcp"
+      - "4000:4000/udp"
+    networks:
+      vpc:
+        ipv4_address: $INTERNAL_IP
+    volumes:
+      - ./data/etc:/usr/local/etc/pvpgn
+      - ./data/var:/usr/local/var/pvpgn
+networks:
+  vpc:
+    name: d2-vpc
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: "$NETWORK_CIDR"
