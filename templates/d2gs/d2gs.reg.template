@@ -16,8 +16,8 @@
 "D2CSSecrect"="$D2CS_SECRET"
 "EnableNTMode"=dword:00000000
 "EnablePreCacheMode"=dword:00000001
-"IdleSleep"=dword:00000000
-"BusySleep"=dword:00000000
+"IdleSleep"=dword:00000001
+"BusySleep"=dword:00000001
 "CharPendingTimeout"=dword:00000258
 "DebugNetPacket"=dword:00000000
 "DebugEventCallback"=dword:00000000
