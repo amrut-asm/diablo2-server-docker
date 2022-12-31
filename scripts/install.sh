@@ -35,7 +35,7 @@ apt-get install -y \
     cmake make supervisor unrar gettext-base
 
 # Clone pvpgn code
-git clone --single-branch --branch "develop" "https://github.com/pvpgn/pvpgn-server.git" pvpgn-server
+git clone --single-branch --branch "develop" "https://github.com/amrut-asm/pvpgn-server.git" pvpgn-server
 cd pvpgn-server
 
 # Build pvpgn
