@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eux
 cp -r templates/data generated
 envsubst < templates/pvpgn/address_translation.conf.template    > generated/data/etc/address_translation.conf
 envsubst < templates/pvpgn/bnetd.conf.template                  > generated/data/etc/bnetd.conf

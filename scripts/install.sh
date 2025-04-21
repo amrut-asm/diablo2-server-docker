@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eux
 export LANG=C.UTF-8
 export D2GS_PARENT_DIR="/root/.wine/drive_c/Program Files"
 
