@@ -95,7 +95,7 @@ wget http://cdn.pvpgn.pro/diablo2/d2speech.mpq
 wget http://cdn.pvpgn.pro/diablo2/d2data.mpq
 wget http://cdn.pvpgn.pro/diablo2/d2sfx.mpq
 wget http://cdn.pvpgn.pro/diablo2/d2exp.mpq
-wget https://cdn.pvpgn.pro/d2gs/D2GS-113c-build03.rar
+wget http://cdn.pvpgn.pro/d2gs/D2GS-113c-build03.rar
 unrar x D2GS-113c-build03.rar
 rm D2GS-113c-build03.rar d2gs.reg
 
