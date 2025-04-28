@@ -2,6 +2,7 @@ version: '3.9'
 services:
   d2gs:
     image: $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
+    entrypoint: ["supervisord", "-n"]
     container_name: d2gs
     restart: unless-stopped
     ports:
